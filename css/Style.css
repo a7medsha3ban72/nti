@@ -1,0 +1,164 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+@font-face {
+    font-family: poppin;
+    src: url(../fonts/poppins/Poppins-Bold.ttf);
+}
+
+:root {
+    --title-color : #222;
+    --site-red-color : #d61c22;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border-top: solid 5px var(--site-red-color);
+}
+
+/* ------------- general formats -------------- */
+h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    color: var(--site-red-color);
+    font-style: italic;
+}
+h1 {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: poppin;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+p {
+    color: #666;
+    line-height: 1.7;
+    text-align: center;
+}
+
+
+/* ----------------- menu ----------------- */
+#menu{
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0)); 
+    position: fixed;
+}
+
+#main-menu {
+    width: 86%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+}
+
+#menu-items {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#menu-items div a{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+}
+
+#menu-social-icons i {
+    padding: 10px;
+}
+
+/* -------- about page ------------ */
+#about-banner {
+    width: 100%;
+    height: 545px;
+    background-image: url(../img/bg-title-page-03.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-title{
+    font-size: 48px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: translateY(50%);
+}
+
+#our-story{
+    background-image: url(../img/pattern2.png);
+    padding: 115px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#our-story * {
+    width: 66%;
+    text-align: center;
+}
+
+/* -------------- our-video ------------- */
+#our-video{
+    width: 100%;
+    height: 720px;
+    background-image: url(../img/header-menu-01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.playVideoButton{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#our-video .playVideoButton:hover {
+    background-color: var(--site-red-color);
+    transform: scale(120%);
+    transition: all 0.3s;
+}
+
+/* -------------- recipes ---------------- */
+#recipes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     width: 80%;
+    margin: auto; */
+}
+
+
+#recipesText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    width: 50%;
+}
